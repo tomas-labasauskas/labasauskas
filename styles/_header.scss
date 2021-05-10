@@ -1,0 +1,91 @@
+header {
+  max-width: 125rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 7.5rem;
+  transition: all 0.2s ease-in-out;
+  .logo {
+    margin-left: 2rem;
+  }
+  .desk-menu {
+    min-width: 30rem;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: space-between;
+    li {
+      .active {
+        //font-weight: 600;
+        opacity: 100%;
+      }
+      a {
+        opacity: 50%;
+        &:hover {
+          opacity: 100%;
+        }
+      }
+    }
+  }
+  .mob-menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    .desk-menu {
+      display: none;
+    }
+    .mob-menu-btn {
+      display: flex;
+      align-self: flex-end;
+      color: white;
+      background: none;
+      margin-right: 2rem;
+      font-size: 3rem;
+      &:hover {
+        cursor: pointer;
+        opacity: 80%;
+      }
+    }
+  }
+}
+
+.mob-menu-cont {
+  max-width: 125rem;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5rem;
+  display: none;
+  .mob-menu {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 100%;
+    text-align: end;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 0.8rem;
+    border: solid white 3px;
+    li {
+      margin-top: 1.2rem;
+      margin-bottom: 1.2rem;
+      .active {
+        font-weight: 600;
+        opacity: 100%;
+      }
+      a {
+        font-size: 1.6rem;
+        margin-right: 2rem;
+        opacity: 80%;
+        &:hover {
+          opacity: 100%;
+        }
+      }
+    }
+  }
+}

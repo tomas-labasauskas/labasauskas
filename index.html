@@ -6,10 +6,392 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="icon" href="./icons/favicon.svg" />
-    <title>labašauskas</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <title>Tomas Labašauskas</title>
   </head>
   <body>
-    <h1>labašauskas.com</h1>
-    <p>coming soon</p>
+    <header>
+      <a href="#">
+        <img
+          title="labašauskas"
+          src="./icons/logo.svg"
+          alt="Labašauskas Logo"
+          class="logo"
+        />
+      </a>
+      <ul class="desk-menu">
+        <li><a class="active" href="#">home</a></li>
+        <li><a href="./blog/">blog</a></li>
+        <li><a href="./about/">about</a></li>
+        <li><a href="./contact/">contact</a></li>
+      </ul>
+
+      <button class="mob-menu-btn"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <nav class="mob-menu-cont">
+      <ul class="mob-menu">
+        <li><a class="active" href="#">home</a></li>
+        <li><a href="./blog/">blog</a></li>
+        <li><a href="./about/">about</a></li>
+        <li><a href="./contact/">contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="pic">
+        <div class="links links-mob">
+          <ul class="link-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/tomas-labasauskas/"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/tomas-labasauskas" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://open.spotify.com/user/uoxhig72dubwiw5fn4ycnh10u?si=c5a446b635b84a03"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                >
+                  <path
+                    d="M19 0c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14zm-7 4c-4.418 0-8 3.582-8 8 0 4.419 3.582 8 8 8s8-3.581 8-8c0-4.418-3.582-8-8-8zm3.669 11.539c-.144.236-.451.31-.686.166-1.878-1.148-4.243-1.408-7.028-.772-.268.062-.535-.106-.597-.375-.061-.268.106-.535.375-.596 3.048-.697 5.662-.397 7.771.891.235.144.309.451.165.686zm.979-2.178c-.181.293-.565.385-.858.205-2.15-1.322-5.428-1.704-7.972-.932-.33.099-.678-.087-.778-.416-.1-.33.086-.677.416-.778 2.905-.881 6.517-.454 8.987 1.063.293.181.385.565.205.858zm.084-2.269c-2.578-1.531-6.832-1.672-9.294-.925-.395.12-.813-.103-.933-.498-.12-.396.103-.814.499-.934 2.826-.858 7.523-.692 10.492 1.07.356.211.472.671.262 1.026-.211.355-.671.472-1.026.261z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:tomas@labasauskas.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="img-cont">
+          <img
+            src="./icons/labašauskas-title..png"
+            alt="labašauskas"
+            class="pic-title"
+            title="Tomas Labašauskas"
+          />
+          <img
+            src="./img/hero-picture.jpg"
+            alt="A picture of Tomas Labašauskas"
+            class="pic-img"
+          />
+        </div>
+      </div>
+
+      <div class="graphics">
+        <div class="gr-row1">
+          <div class="hero-text">
+            <h1 class="hero-title">i am looking for an internship</h1>
+            <div class="line-cont">
+              <img class="line-gr" src="./icons/arrow-gr.svg" alt="" />
+            </div>
+            <h1 class="hero-subtitle">
+              i can do
+              <div id="typed-strings">
+                <h1>web development</h1>
+                <h1>graphic design</h1>
+                <h1>video editing</h1>
+                <h1>digital marketing</h1>
+                <h1>project management</h1>
+              </div>
+              <span id="typed"></span>
+            </h1>
+          </div>
+          <a href="./contact/" class="contact-btn">CONTACT ME</a>
+        </div>
+
+        <div class="gr-row2">
+          <span class="line-gr"></span>
+        </div>
+
+        <div class="gr-row3">
+          <div class="links links-desk">
+            <ul class="link-list">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/tomas-labasauskas/"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/tomas-labasauskas" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/user/uoxhig72dubwiw5fn4ycnh10u?si=c5a446b635b84a03"
+                  target="_blank"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  >
+                    <path
+                      d="M19 0c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14zm-7 4c-4.418 0-8 3.582-8 8 0 4.419 3.582 8 8 8s8-3.581 8-8c0-4.418-3.582-8-8-8zm3.669 11.539c-.144.236-.451.31-.686.166-1.878-1.148-4.243-1.408-7.028-.772-.268.062-.535-.106-.597-.375-.061-.268.106-.535.375-.596 3.048-.697 5.662-.397 7.771.891.235.144.309.451.165.686zm.979-2.178c-.181.293-.565.385-.858.205-2.15-1.322-5.428-1.704-7.972-.932-.33.099-.678-.087-.778-.416-.1-.33.086-.677.416-.778 2.905-.881 6.517-.454 8.987 1.063.293.181.385.565.205.858zm.084-2.269c-2.578-1.531-6.832-1.672-9.294-.925-.395.12-.813-.103-.933-.498-.12-.396.103-.814.499-.934 2.826-.858 7.523-.692 10.492 1.07.356.211.472.671.262 1.026-.211.355-.671.472-1.026.261z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:tomas@labasauskas.com">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="email">tomas@labasauskas.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="blog-intro">
+      <img src="./icons/arrow-down.svg" class="arrow-down" alt="" />
+
+      <div class="posts-cont">
+        <div class="post post1">
+          <a href="#">
+            <img src="./img/cover-1.png" alt="" />
+            <p class="date">
+              April 20, 2021 | <i class="far fa-clock"></i> 8 min
+            </p>
+            <h1 class="title">
+              Erasmus exchange Experience during a Global Pandemic
+            </h1>
+            <p class="description">
+              In 2021 I spent one semester (5 months) in France as an Erasmus
+              exchange student. I studied International Business at ESSCA (Ecole
+              de Management). This is my story, thoughts and reccomendations for
+              those who might be planning their exchange soon.
+            </p>
+          </a>
+        </div>
+
+        <div class="post post2">
+          <a href="#">
+            <img src="./img/cover-2.png" alt="" />
+            <p class="date">
+              April 8, 2021 | <i class="far fa-clock"></i> 23 min
+            </p>
+            <h1 class="title">
+              Everything I lerned in my 2 years of Business School
+            </h1>
+            <p class="description">
+              In 2021 I spent one semester (5 months) in France as an Erasmus
+              exchange student. I studied International Business at ESSCA (Ecole
+              de Management). This is my story, thoughts and reccomendations for
+              those who.
+            </p></a
+          >
+        </div>
+
+        <div class="post post3">
+          <a href="#">
+            <img src="./img/cover-3.png" alt="" />
+            <p class="date">
+              March 22, 2021 | <i class="far fa-clock"></i> 11 min
+            </p>
+            <h1 class="title">
+              Is there a Housing Bubble in Lithuania in 2021?
+            </h1>
+            <p class="description">
+              In 2021 I spent one semester (5 months) in France as an Erasmus
+              exchange student. I studied International Business at ESSCA (Ecole
+              de Management). This is my story, thoughts and reccomendations for
+              those who might be planning their exchange soon. Hello hello
+              everyone.
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <a href="./blog/" class="blog-link">READ THE BLOG</a>
+    </section>
+
+    <footer>
+      <div class="desk-footer">
+        <ul class="site-map">
+          <li><a href="./blog/">Blog</a></li>
+          <li><a href="./about/">About</a></li>
+          <li><a href="./contact/">Contact</a></li>
+        </ul>
+
+        <p class="copyright">2021 © LABAŠAUSKAS</p>
+
+        <div class="soc-links">
+          <ul class="soc-row">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/tomas-labasauskas/"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/tomas-labasauskas"
+                target="_blank"
+                class="github-svg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="soc-row">
+            <li>
+              <a
+                href="https://open.spotify.com/user/uoxhig72dubwiw5fn4ycnh10u?si=c5a446b635b84a03"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 0c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14zm-7 4c-4.418 0-8 3.582-8 8 0 4.419 3.582 8 8 8s8-3.581 8-8c0-4.418-3.582-8-8-8zm3.669 11.539c-.144.236-.451.31-.686.166-1.878-1.148-4.243-1.408-7.028-.772-.268.062-.535-.106-.597-.375-.061-.268.106-.535.375-.596 3.048-.697 5.662-.397 7.771.891.235.144.309.451.165.686zm.979-2.178c-.181.293-.565.385-.858.205-2.15-1.322-5.428-1.704-7.972-.932-.33.099-.678-.087-.778-.416-.1-.33.086-.677.416-.778 2.905-.881 6.517-.454 8.987 1.063.293.181.385.565.205.858zm.084-2.269c-2.578-1.531-6.832-1.672-9.294-.925-.395.12-.813-.103-.933-.498-.12-.396.103-.814.499-.934 2.826-.858 7.523-.692 10.492 1.07.356.211.472.671.262 1.026-.211.355-.671.472-1.026.261z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:tomas@labasauskas.com" class="mail-svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="./javascript/mob-menu.js"></script>
+
+    <script>
+      var typed = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        typeSpeed: 50,
+        backSpeed: 40,
+        loop: true,
+      });
+    </script>
+
+    <script src="./javascript/typing.js"></script>
   </body>
 </html>
