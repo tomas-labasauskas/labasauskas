@@ -914,7 +914,7 @@ footer .desk-footer .soc-links .soc-row a svg {
 }
 
 .latest-post a img {
-  width: 55%;
+  max-width: 55%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1.6rem;
@@ -1232,6 +1232,7 @@ footer .desk-footer .soc-links .soc-row a svg {
           flex-direction: column;
   margin: 3rem;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   border-radius: 1.2rem;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: -webkit-transform 0.2s ease;
@@ -1243,6 +1244,7 @@ footer .desk-footer .soc-links .soc-row a svg {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding-bottom: 2rem;
 }
 
 .popup-cont .popup .exit-popup {
@@ -1280,6 +1282,7 @@ footer .desk-footer .soc-links .soc-row a svg {
 
 .popup-cont .popup .popup-title p {
   margin-left: 1rem;
+  margin-bottom: 0rem;
 }
 
 .popup-cont .popup p {
@@ -1289,6 +1292,7 @@ footer .desk-footer .soc-links .soc-row a svg {
   line-height: 2.6rem;
   margin-right: 4rem;
   margin-left: 4rem;
+  margin-bottom: 2rem;
 }
 
 .popup-cont .popup p a:hover {
