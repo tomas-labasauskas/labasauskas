@@ -117,7 +117,7 @@ header .logo {
 }
 
 header .desk-menu {
-  min-width: 30rem;
+  min-width: 25rem;
   margin-right: 2rem;
   font-size: 1.8rem;
   display: -webkit-box;
@@ -845,7 +845,7 @@ footer .desk-footer .soc-links .soc-row a svg {
   background: white;
   color: black;
   padding: 2rem 3rem;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 0.8rem;
   font-size: 1.6rem;
   border: solid white 3px;
@@ -1408,6 +1408,156 @@ footer .desk-footer .soc-links .soc-row a svg {
   .popup-cont .popup p {
     margin-right: 2rem;
     margin-left: 2rem;
+  }
+}
+
+.price-cards {
+  max-width: 125rem;
+  margin: auto;
+  min-height: 60rem;
+  margin-top: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.price-cards .arrow-down {
+  max-height: 5rem;
+  margin-bottom: 7rem;
+}
+
+.price-cards .cards-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 5rem;
+}
+
+.price-cards .cards-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.price-cards .cards-cont #web-developer {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.price-cards .cards-cont .card {
+  width: 35rem;
+  height: 52rem;
+  border: solid white 3px;
+  border-radius: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-cards .cards-cont .card i {
+  margin-top: 5rem;
+  font-size: 2.6rem;
+}
+
+.price-cards .cards-cont .card .card-title {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.price-cards .cards-cont .card .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.price-cards .cards-cont .card .price p {
+  margin-right: 0.5rem;
+  padding-bottom: 0.4rem;
+}
+
+.price-cards .cards-cont .card .package {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+
+.price-cards .cards-cont .card .package p {
+  margin-bottom: 1.5rem;
+}
+
+.price-cards .cards-cont .card .contact-btn {
+  background: white;
+  color: black;
+  padding: 1.5rem 3rem;
+  font-weight: 700;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  border: solid white 3px;
+  margin-bottom: 4rem;
+}
+
+.price-cards .cards-cont .card .contact-btn:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
+@media screen and (max-width: 830px) {
+  .price-cards {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .price-cards .cards-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-cards .cards-cont .card {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .price-cards .cards-cont #web-developer {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .price-cards {
+    margin-top: 3rem;
+  }
+  .price-cards .arrow-down {
+    margin-bottom: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
