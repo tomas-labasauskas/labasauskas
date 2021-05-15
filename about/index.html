@@ -18,6 +18,16 @@
       crossorigin="anonymous"
     />
     <title>Tomas Labašauskas - About</title>
+
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
   </head>
   <body>
     <header>
@@ -121,11 +131,12 @@
             <i class="fas fa-file-excel"></i>
             <p>Excel</p>
           </button>
-          <button id="english-btn">
-            <i class="fas fa-globe-europe"></i>
-            <p>English</p>
+          <button id="marketing-btn">
+            <i class="fas fa-ad"></i>
+            <p>Marketing</p>
           </button>
         </div>
+        <!--
         <h1>SOFT SKILLS</h1>
         <div class="btns-grid">
           <button id="time-mngmt-btn">
@@ -141,6 +152,7 @@
             <p>Leadership</p>
           </button>
         </div>
+        -->
         <h1>HOBBIES</h1>
         <div class="btns-grid">
           <button id="running-btn">
@@ -247,6 +259,7 @@
     </footer>
 
     <div class="popup-cont video-popup-cont">
+      <div class="video-exit-back exit-back"></div>
       <div class="popup">
         <button class="video-exit-popup exit-popup">
           <i class="fas fa-times-circle"></i>
@@ -295,6 +308,7 @@
     </div>
 
     <div class="popup-cont web-dev-popup-cont">
+      <div class="web-dev-exit-back exit-back"></div>
       <div class="popup">
         <button class="web-dev-exit-popup exit-popup">
           <i class="fas fa-times-circle"></i>
@@ -319,6 +333,7 @@
     </div>
 
     <div class="popup-cont design-popup-cont">
+      <div class="design-exit-back exit-back"></div>
       <div class="popup">
         <button class="design-exit-popup exit-popup">
           <i class="fas fa-times-circle"></i>
@@ -333,18 +348,158 @@
           of my own stuff: logos, thumbnails, video graphics, websites, ads, and
           posters. That is when my design journey began. Since I was a
           videographer, I already knew a lot about color, composition, and
-          contrast. Lately I have been learning a lot about UI / UX design &
-          developing my own style. For me design is not an art, it is problem
-          solving. This website was designed by me and as you can see it is very
-          simple: monochromatic, one font, almost no animations, mobile
-          friendly, accessible, functional. I take these ideas into my personal
-          life as well. 99% of the time I wear all black clothes, I cut my own
-          hair and keep it 5mm short, I only own things that are practical and
-          bring value. That is it, I try to keep my design efficient and
-          effective.
+          contrast. Lately I have been learning a lot about UI / UX design. This
+          website was designed by me and as you can see it is very simple:
+          monochromatic, one font, almost no animations, mobile friendly,
+          accessible, functional. I take these ideas into my personal life as
+          well. I try to keep my design simple.
         </p>
 
         <p><b>TECHNOLOGIES:</b> Figma, Adobe Photoshop.</p>
+      </div>
+    </div>
+
+    <div class="popup-cont photography-popup-cont">
+      <div class="photography-exit-back exit-back"></div>
+      <div class="popup">
+        <button class="photography-exit-popup exit-popup">
+          <i class="fas fa-times-circle"></i>
+        </button>
+        <div class="popup-title">
+          <i class="fas fa-camera"></i>
+          <p>PHOTOGRAPHY</p>
+        </div>
+        <p>
+          <b>EXPERIENCE:</b> 5 Years <br />
+          I have been playing with cameras since I was 4 years old. Photography
+          was my first job. I am a visual person, I like to look for things.
+          Photography teaches you a lot about people, you learn what others find
+          beautiful, what are their insecurities, how they perceive themselves.
+          It teaches you how to be more observant. It also lets you connect with
+          the environment.
+        </p>
+
+        <p><b>TECHNOLOGIES:</b> Adobe Photoshop, Adobe Lightroom, Figma.</p>
+      </div>
+    </div>
+
+    <div class="popup-cont excel-popup-cont">
+      <div class="excel-exit-back exit-back"></div>
+      <div class="popup">
+        <button class="excel-exit-popup exit-popup">
+          <i class="fas fa-times-circle"></i>
+        </button>
+        <div class="popup-title">
+          <i class="fas fa-file-excel"></i>
+          <p>EXCEL</p>
+        </div>
+        <p>
+          <b>EXPERIENCE:</b> 3 Years <br />
+          I am no excel wizard, but I am familiar with these concepts: data
+          analysis, forecast analysis, regression, time series, Brown’s / Holt’s
+          / Holt-Winters’ models, accounting, inventory management, charts.
+        </p>
+
+        <p>
+          <b>COURSES:</b> Business Statistics, Accounting, Business Mathematics,
+          Operations Management.
+        </p>
+      </div>
+    </div>
+
+    <div class="popup-cont marketing-popup-cont">
+      <div class="marketing-exit-back exit-back"></div>
+      <div class="popup">
+        <button class="marketing-exit-popup exit-popup">
+          <i class="fas fa-times-circle"></i>
+        </button>
+        <div class="popup-title">
+          <i class="fas fa-ad"></i>
+          <p>MARKETING</p>
+        </div>
+        <p>
+          <b>EXPERIENCE:</b> 5 Years <br />Content creation for companies and
+          marketing agencies (mostly videos) + digital marketing campaigns in
+          the role of artist manager, podcast producer.
+        </p>
+
+        <p>
+          <b>COURSES:</b> Marketing Basics, Coordinating marketing strategy and
+          Operations management.
+        </p>
+
+        <p>
+          <b>TECHNOLOGIES:</b> SEO, PPC, Google AdWords / Analytics, FB Ads, IG
+          Ads, YouTube, Spotify.
+        </p>
+      </div>
+    </div>
+
+    <div class="popup-cont running-popup-cont">
+      <div class="running-exit-back exit-back"></div>
+      <div class="popup">
+        <button class="running-exit-popup exit-popup">
+          <i class="fas fa-times-circle"></i>
+        </button>
+        <div class="popup-title">
+          <i class="fas fa-shoe-prints"></i>
+          <p>RUNNING</p>
+        </div>
+        <p>I run 3 – 5 times a week. My longest distance run – 36KM.</p>
+
+        <p><b>AVERAGE PACE:</b> 05:38 / KM (On 10K)</p>
+        <p>Would you like to run with me?</p>
+        <form name="Running" method="POST" data-netlify="true">
+          <input type="email" name="Email" placeholder="EMAIL" />
+          <input type="tel" name="Phone Number" placeholder="PHONE NR" />
+          <button type="submit" class="submit-btn">LET'S RUN</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup-cont tennis-popup-cont">
+      <div class="tennis-exit-back exit-back"></div>
+      <div class="popup">
+        <button class="tennis-exit-popup exit-popup">
+          <i class="fas fa-times-circle"></i>
+        </button>
+        <div class="popup-title">
+          <i class="fas fa-baseball-ball"></i>
+          <p>TENNIS</p>
+        </div>
+        <p>
+          Tennis is my favorite sport. I also enjoy table tennis and squash.
+        </p>
+        <p>Would you like to play any of them?</p>
+        <form name="Tennis" method="POST" data-netlify="true">
+          <input type="email" name="Email" placeholder="EMAIL" />
+          <input type="tel" name="Phone Number" placeholder="PHONE NR" />
+          <button type="submit" class="submit-btn">LET'S PLAY</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup-cont music-popup-cont">
+      <div class="music-exit-back exit-back"></div>
+      <div class="popup">
+        <button class="music-exit-popup exit-popup">
+          <i class="fas fa-times-circle"></i>
+        </button>
+        <div class="popup-title">
+          <i class="fas fa-headphones-alt"></i>
+          <p>MUSIC</p>
+        </div>
+        <p>Here is a playlist that defines my taste in music:</p>
+        <div class="player-cont">
+          <iframe
+            src="https://open.spotify.com/embed/playlist/4VjqdTWskIvG2q5twN52iS"
+            width="300"
+            height="480"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
       </div>
     </div>
 

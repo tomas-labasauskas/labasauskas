@@ -1220,6 +1220,14 @@ footer .desk-footer .soc-links .soc-row a svg {
   overflow-y: scroll;
 }
 
+.popup-cont .exit-back {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
 .popup-cont .popup {
   background: black;
   border: white solid 3px;
@@ -1245,6 +1253,52 @@ footer .desk-footer .soc-links .soc-row a svg {
   height: -moz-fit-content;
   height: fit-content;
   padding-bottom: 2rem;
+}
+
+.popup-cont .popup form {
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.popup-cont .popup input {
+  width: 100%;
+  padding: 1.2rem 2.4rem;
+  background: black;
+  color: white;
+  border: solid white 2px;
+  border-radius: 0.8rem;
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.popup-cont .popup .submit-btn {
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 1.2rem 2.4rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  border: solid white 2px;
+  margin-bottom: 3rem;
+}
+
+.popup-cont .popup .submit-btn:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
+.popup-cont .popup .player-cont {
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.popup-cont .popup iframe {
+  width: 100%;
+  height: 38rem;
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
 }
 
 .popup-cont .popup .exit-popup {
@@ -1299,13 +1353,6 @@ footer .desk-footer .soc-links .soc-row a svg {
   text-decoration: underline;
 }
 
-.popup-cont .popup iframe {
-  width: 47rem;
-  height: 26rem;
-  margin: 4rem;
-  border-radius: 1.2rem;
-}
-
 .popup-cont.active {
   opacity: 1;
   pointer-events: all;
@@ -1347,8 +1394,20 @@ footer .desk-footer .soc-links .soc-row a svg {
     margin-right: 2rem;
     margin-left: 2rem;
   }
-  .popup-cont .popup iframe {
-    width: 85%;
+}
+
+@media screen and (max-width: 360px) {
+  .popup-cont .popup form {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .popup-cont .popup .player-cont {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .popup-cont .popup p {
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
