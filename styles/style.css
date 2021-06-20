@@ -196,8 +196,8 @@ header .mob-menu-btn {
 }
 
 .mob-menu-cont .mob-menu li {
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mob-menu-cont .mob-menu li .active {
@@ -1134,14 +1134,22 @@ footer .desk-footer .soc-links .soc-row a svg {
   letter-spacing: 0.1rem;
 }
 
-.about .column-1 p {
+.about .column-1 .about-text {
   margin-bottom: 3rem;
   text-align: justify;
-  font-size: 1.4rem;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 2.6rem;
+  line-height: 28px;
   letter-spacing: 3%;
-  font-size: 14px;
+  color: #e2e2e2;
+}
+
+.about .column-1 .about-text .in-txt-link {
+  font-weight: 500;
+}
+
+.about .column-1 .about-text .in-txt-link:hover {
+  text-decoration: underline;
 }
 
 .about .column-2 {
