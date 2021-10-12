@@ -6,85 +6,72 @@
 
 html {
   font-size: 62.5%;
-  background: black;
-  color: white;
-  font-family: "Work Sans", sans-serif;
+  background: $background;
+  color: $color;
+  font-family: "Poppins", sans-serif;
   transition: all 0.2s ease-in-out;
+}
+
+/*
+Regular 400
+Medium 500
+Semi-bold 600
+*/
+
+a {
+  font-size: 1.6rem;
+  color: $a;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: $color;
+  }
+}
+.active {
+  color: $color;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: $color;
+}
+
+img {
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 55%;
+  }
 }
 
 // CUSTOM SCROLLBAR
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+  background: rgba(0, 0, 0, 0);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(51, 51, 51);
+  background: rgba(0, 0, 0, 0.178);
+  //border-radius: 90px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(182, 182, 182);
-}
-
-::selection {
-  color: black;
-  background: white;
-}
-::-moz-selection {
-  color: black;
-  background: white;
-}
-
-input:focus,
-textarea:focus,
-select:focus,
-button:focus {
-  outline: none;
-}
-
-/*
-Light 300
-Light 300 italic
-Regular 400
-Regular 400 italic
-Medium 500
-Medium 500 italic
-Semi-bold 600
-Semi-bold 600 italic
-Bold 700
-Bold 700 italic
-*/
-
-li,
-a {
-  color: white;
-  text-decoration: none;
-  list-style: none;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
-}
-
-@media screen and (max-width: 1000px) {
-  html {
-    font-size: 55%;
-  }
-}
-
-h1 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  letter-spacing: 3%;
-}
-
-button {
-  background: none;
-  border: none;
+  background: rgba(0, 0, 0, 0.5);
 }

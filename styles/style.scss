@@ -1,10 +1,8 @@
+$background: white;
+$color: #12312e;
+$a: #12312e73;
+$border: #12312e17;
+
 @import "global";
 @import "header";
-@import "hero";
-@import "blog-intro";
-@import "footer";
-@import "contact";
-@import "blog";
-@import "about";
-@import "price-cards";
-@import "success";
+@import "home";
