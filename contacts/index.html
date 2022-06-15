@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <title>Contacts | Tomas Labašauskas</title>
+    <meta name="description" content="Contact me here: tomas@labasauskas.com" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="pc-wrap">
+        <a href="../"><h3 class="logo">Tomas Labašauskas</h3></a>
+        <nav class="pc-nav">
+          <ul>
+            <li><a href="../">Work</a></li>
+            <li><a href="../about/">About</a></li>
+            <li><a href="./" class="active">Contacts</a></li>
+            <li><a href="../life/">Life</a></li>
+          </ul>
+        </nav>
+        <button class="mob-nav-btn">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </header>
+    <nav class="mob-nav">
+      <ul>
+        <li><a href="../">Work</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="./" class="active">Contacts</a></li>
+        <li><a href="../life/">Life</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="left">
+        <div class="text">
+          <div class="imgs">
+            <img src="../img/contact-decor-1.jpg" alt="Mail" />
+            <img src="../img/contact-decor-2.jpg" alt="Envelope" />
+          </div>
+
+          <div class="title">
+            <h1>Hey</h1>
+            <div class="sub-title">
+              <p style="margin-top: 4rem">tomas@labasauskas.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <img src="../img/contact.jpg" alt="Messenger" />
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="left">
+        <div class="graphics">
+          <h2>
+            Email me or you <br />
+            will have bad luck <br />
+            for 10 years
+          </h2>
+          <div class="imgs">
+            <img src="../img/contact-1.jpg" alt="Contacts" />
+            <img src="../img/contact-2.jpg" alt="Contacts" />
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <form
+          name="contact-contact-page"
+          method="POST"
+          action="/thanks/"
+          data-netlify="true"
+        >
+          <input
+            name="Name"
+            type="text"
+            spellcheck="false"
+            placeholder="Your name"
+          />
+          <input
+            name="Email"
+            type="email"
+            spellcheck="false"
+            placeholder="Your email address"
+          />
+          <textarea
+            name="Message"
+            id="message"
+            cols="30"
+            rows="8"
+            spellcheck="false"
+            placeholder="Enter your message"
+          ></textarea>
+
+          <button>SEND</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="text">
+        <p>tomas@labasauskas.com</p>
+        <p>2022 Ⓒ LABAŠAUSKAS</p>
+      </div>
+
+      <div class="links">
+        <a
+          href="https://open.spotify.com/user/uoxhig72dubwiw5fn4ycnh10u?si=2a30752202704f2e"
+          target="_blank"
+          ><i class="fa-brands fa-spotify"></i
+        ></a>
+        <a href="https://github.com/tomas-labasauskas" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/tomas-labasauskas/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="../js/mob-nav.js"></script>
+  </body>
+</html>

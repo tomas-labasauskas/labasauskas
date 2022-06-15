@@ -1,0 +1,224 @@
+.tech-grid {
+  background: white;
+  color: black;
+  .text {
+    margin-right: $margin1;
+    margin-left: $margin1;
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+    h2 {
+      font-size: 8rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+  .grid {
+    margin-right: $margin1;
+    margin-left: $margin1;
+    padding-bottom: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 32rem);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    justify-content: space-between;
+    .container {
+      position: relative;
+      width: 32rem;
+      height: 14rem;
+      background: #080808;
+      color: white;
+      border-radius: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .confidence {
+        position: absolute;
+        left: 0;
+        height: 14rem;
+        background: #2d3f49;
+        border-radius: 90px;
+      }
+      i {
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        z-index: 0;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        z-index: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1820px) {
+  .tech-grid {
+    .grid {
+      grid-template-columns: repeat(auto-fill, 28rem);
+      .container {
+        width: 28rem;
+        height: 12rem;
+        .confidence {
+          height: 12rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .tech-grid {
+    .text {
+      margin-right: $margin2;
+      margin-left: $margin2;
+    }
+    .grid {
+      margin-right: $margin2;
+      margin-left: $margin2;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tech-grid {
+    .text {
+      margin-right: $margin3;
+      margin-left: $margin3;
+    }
+    .grid {
+      margin-right: $margin3;
+      margin-left: $margin3;
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .tech-grid {
+    .grid {
+      grid-template-columns: repeat(auto-fill, 22rem);
+      .container {
+        width: 22rem;
+        height: 10rem;
+        .confidence {
+          height: 10rem;
+        }
+        i {
+          font-size: 2.8rem;
+        }
+        p {
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .tech-grid {
+    .grid {
+      grid-template-columns: repeat(auto-fill, 18rem);
+      grid-column-gap: 15px;
+      grid-row-gap: 25px;
+      .container {
+        width: 18rem;
+        height: 8rem;
+        .confidence {
+          height: 8rem;
+        }
+        i {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tech-grid {
+    .text {
+      margin-right: $margin4;
+      margin-left: $margin4;
+      h2 {
+        font-size: 5rem;
+      }
+    }
+    .grid {
+      margin-right: $margin4;
+      margin-left: $margin4;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .tech-grid {
+    .grid {
+      grid-template-columns: repeat(auto-fill, 16rem);
+      grid-column-gap: 15px;
+      grid-row-gap: 25px;
+      .container {
+        width: 16rem;
+        height: 8rem;
+        .confidence {
+          height: 8rem;
+        }
+        i {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .tech-grid {
+    .text {
+      margin-right: $margin5;
+      margin-left: $margin5;
+    }
+    .grid {
+      margin-right: $margin5;
+      margin-left: $margin5;
+    }
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .tech-grid {
+    .grid {
+      grid-template-columns: repeat(auto-fill, 14rem);
+      grid-column-gap: 10px;
+      grid-row-gap: 20px;
+      .container {
+        width: 14rem;
+        height: 7rem;
+        .confidence {
+          height: 7rem;
+        }
+        i {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

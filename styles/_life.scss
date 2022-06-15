@@ -1,0 +1,157 @@
+.life {
+  background: white;
+  .grid {
+    margin-right: $margin1;
+    margin-left: $margin1;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "g1 g1 g1 g2 g2 g3 g3 g3"
+      "g4 g4 g5 g5 g5 g6 g6 g6"
+      "g7 g7 g7 g8 g8 g8 g9 g9"
+      "g10 g10 g10 g11 g11 g12 g12 g12"
+      "g13 g13 g14 g14 g14 g15 g15 g15";
+    img {
+      height: 42rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .g1 {
+    grid-area: g1;
+  }
+
+  .g2 {
+    grid-area: g2;
+    object-position: right;
+  }
+
+  .g3 {
+    grid-area: g3;
+  }
+
+  .g4 {
+    grid-area: g4;
+    object-position: right;
+  }
+
+  .g5 {
+    grid-area: g5;
+  }
+
+  .g6 {
+    grid-area: g6;
+  }
+
+  .g7 {
+    grid-area: g7;
+  }
+
+  .g8 {
+    grid-area: g8;
+  }
+
+  .g9 {
+    grid-area: g9;
+  }
+
+  .g10 {
+    grid-area: g10;
+  }
+
+  .g11 {
+    grid-area: g11;
+  }
+
+  .g12 {
+    grid-area: g12;
+  }
+
+  .g13 {
+    grid-area: g13;
+  }
+
+  .g14 {
+    grid-area: g14;
+  }
+
+  .g15 {
+    grid-area: g15;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .life {
+    .grid {
+      margin-right: $margin2;
+      margin-left: $margin2;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .life {
+    .grid {
+      margin-right: $margin3;
+      margin-left: $margin3;
+
+      grid-template-areas:
+        "g1 g1 g1 g1 g1 g2 g2 g2"
+        "g3 g3 g3 g3 g3 g4 g4 g4"
+        "g5 g5 g5 g5 g6 g6 g6 g6"
+        "g7 g7 g7 g7 g8 g8 g8 g8"
+        "g9 g9 g9 g10 g10 g10 g10 g10"
+        "g11 g11 g11 g12 g12 g12 g12 g12"
+        "g13 g13 g13 g14 g14 g14 g14 g14"
+        "g15 g15 g15 g15 g15 g15 g15 g15";
+    }
+  }
+}
+@media screen and (max-width: 1025px) {
+  .life {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+
+      grid-template-areas:
+        "g1"
+        "g2"
+        "g3"
+        "g4"
+        "g4"
+        "g5"
+        "g6"
+        "g7"
+        "g8"
+        "g9"
+        "g10"
+        "g11"
+        "g12"
+        "g13"
+        "g14"
+        "g15";
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .life {
+    .grid {
+      padding-top: 4rem;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .life {
+    .grid {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}

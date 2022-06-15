@@ -11,93 +11,325 @@
       content="Tomas Labašauskas: web development, web scraping, automation, growth marketing, business development."
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" href="./img/favicon.svg" />
+    <link rel="icon" href="./img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-QWYHGVGN1J"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-QWYHGVGN1J");
-    </script>
   </head>
   <body>
     <header>
-      <!-- <nav>
-        <a href="./" class="active">home</a>
-        <div class="divider"></div>
-        <a href="./">notes</a>
-      </nav> -->
-
-      <p>Tomas Labašauskas © 2022</p>
+      <div class="pc-wrap">
+        <a href="./"><h3 class="logo">Tomas Labašauskas</h3></a>
+        <nav class="pc-nav">
+          <ul>
+            <li><a href="./" class="active">Work</a></li>
+            <li><a href="./about/">About</a></li>
+            <li><a href="./contacts/">Contacts</a></li>
+            <li><a href="./life/">Life</a></li>
+          </ul>
+        </nav>
+        <button class="mob-nav-btn">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
     </header>
+    <nav class="mob-nav">
+      <ul>
+        <li><a href="./" class="active">Work</a></li>
+        <li><a href="./about/">About</a></li>
+        <li><a href="./contacts/">Contacts</a></li>
+        <li><a href="./life/">Life</a></li>
+      </ul>
+    </nav>
 
     <section class="hero">
-      <div class="col-1">
-        <div class="email-card">
-          <h1>tomas@labasauskas.com</h1>
-          <p>+ web development</p>
-          <p>+ web scraping</p>
-          <p>+ automation</p>
-          <p>+ growth marketing</p>
-          <p>+ business development</p>
-        </div>
+      <div class="left">
+        <div class="text">
+          <div class="imgs">
+            <img src="./img/hero-decor-1.jpg" alt="" />
+            <img src="./img/hero-decor-2.jpg" alt="" />
+          </div>
 
-        <div class="img-cont">
-          <img src="./img/hero.jpg" alt="Tomas Labašauskas" />
+          <div class="title">
+            <h1>Tomas</h1>
+            <div class="sub-title">
+              <p>HACKER | VILNIUS</p>
+              <p>tomas@labasauskas.com</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="col-2">
-        <h2>project index:</h2>
-        <p>
-          <a href="https://www.auksveikai.lt/" target="_blank">auksveikai.lt</a>
-          - web design, web development (react.js + sass), seo, email marketing
-          (active campaign), business development, analytics.
-        </p>
-        <p>
-          <a href="https://www.gabikami.lt/" target="_blank">gabikami.lt</a> -
-          web design, web development (html + sass + js + stripe + zoho +
-          zapier), seo, google ads, business development, analytics.
-        </p>
-        <p>
-          <a href="https://www.youtube.com/relarecords" target="_blank"
-            >youtube.com/relarecords</a
-          >
-          - youtube seo, music distribution, adobe premiere + photoshop, project
-          management.
-        </p>
-        <p>
-          i also worked here:
-          <a href="https://tesonet.com/" target="_blank">tesonet</a>,
-          <a href="http://www.masiulida.lt/" target="_blank" rel="nofollow"
-            >masiulida</a
-          >,
-          <a href="https://www.youtube.com/c/PROTOINDUSTRIJA" target="_blank"
-            >proto industrija</a
-          >,
-          <a href="https://www.hypemusic.com/" target="_blank" rel="nofollow"
-            >hypemusic</a
-          >.
-        </p>
+      <div class="right">
+        <img src="./img/hero-img.jpg" alt="Tomas Labašauskas" />
       </div>
     </section>
+
+    <section class="portfolio portfolio1">
+      <div class="left">
+        <div class="graphics">
+          <div class="txt">
+            <h2>01</h2>
+            <p>AUK SVEIKAI</p>
+          </div>
+          <a href="https://www.auksveikai.lt/" target="_blank">
+            <img src="./img/auk-sveikai.jpg" alt="Auk Sveikai svetainė" />
+          </a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="info">
+          <div class="upper">
+            <p>ROLE: CMO & FOUNDER</p>
+            <h2>
+              Web Dev + Design + SEO + SMA + Email Marketing + Business Dev
+            </h2>
+            <div class="stats">
+              <p>0.09€ CPA</p>
+              <p>40% Conv. Rate</p>
+              <p>1350 Users</p>
+            </div>
+            <div class="tech-stack">
+              <img
+                src="./img/activecampaign-logo.png"
+                alt="Active Campaign logo png"
+                title="active campaign"
+              />
+              <img
+                src="./img/semrush-logo.png"
+                alt="SemRush logo png"
+                title="semrush"
+              />
+              <img
+                src="./img/react-logo.png"
+                alt="React logo png"
+                title="react.js"
+              />
+              <img
+                src="./img/meta-logo.png"
+                alt="Meta logo png"
+                title="meta ads"
+              />
+            </div>
+          </div>
+
+          <a
+            href="https://www.auksveikai.lt/"
+            target="_blank"
+            class="go-to-site"
+            >Visit the website <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio portfolio2">
+      <div class="left">
+        <div class="graphics">
+          <div class="txt">
+            <h2>02</h2>
+            <p>GABIKAMI</p>
+          </div>
+          <a href="https://www.gabikami.lt/" target="_blank">
+            <img src="./img/gabikami.jpg" alt="GabiKami svetainė" />
+          </a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="info">
+          <div class="upper">
+            <p>ROLE: MARKETING MANAGER</p>
+            <h2>Web Dev + Design + SEO + SEM</h2>
+            <div class="stats">
+              <p>1750% ROAS</p>
+              <p>15 000€ Rev.</p>
+              <p>452 Clients</p>
+            </div>
+            <div class="tech-stack">
+              <img
+                src="./img/stripe-logo.png"
+                alt="Stripe logo png"
+                title="stripe"
+              />
+              <img
+                src="./img/google-logo.png"
+                alt="Google ads logo png"
+                title="google ads"
+              />
+              <img src="./img/html-logo.png" alt="HTML logo png" title="html" />
+              <img src="./img/sass-logo.png" alt="SASS logo png" title="sass" />
+            </div>
+          </div>
+
+          <a href="https://www.gabikami.lt/" target="_blank" class="go-to-site"
+            >Visit the website <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio portfolio3">
+      <div class="left">
+        <div class="graphics">
+          <div class="txt">
+            <h2>03</h2>
+            <p>RELA RECORDS</p>
+          </div>
+          <a href="https://www.youtube.com/c/RELArecords" target="_blank">
+            <img src="./img/rela-records.jpg" alt="Rela Records" />
+          </a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="info">
+          <div class="upper">
+            <p>ROLE: VIDEO PRODUCER</p>
+            <h2>Project Mgmt + Videography + Photogrpahy + Publishing</h2>
+            <div class="stats">
+              <p>3.49M Views</p>
+              <p>25 Videos</p>
+              <p>5.72K Sub.</p>
+            </div>
+            <div class="tech-stack">
+              <img
+                src="./img/youtube-studio-logo.png"
+                alt="YouTube studio logo png"
+                title="youtube studio"
+              />
+              <img
+                src="./img/premiere-pro-logo.png"
+                alt="Adobe Premiere logo png"
+                title="adobe premiere pro"
+              />
+              <img
+                src="./img/figma-logo.png"
+                alt="Figma logo png"
+                title="figma"
+              />
+              <img
+                src="./img/photoshop-logo.png"
+                alt="Photoshop ads logo png"
+                title="adobe photoshop"
+              />
+            </div>
+          </div>
+
+          <a
+            href="https://www.youtube.com/c/RELArecords"
+            target="_blank"
+            class="go-to-site"
+            >Go to the channel <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-exp">
+      <div class="left">
+        <div class="graphics">
+          <p>Also worked for them:</p>
+
+          <a href="https://nordsecurity.com/" target="_blank">
+            <img
+              src="./img/nord-security-logo.png"
+              alt="Nord Security logo png"
+            />
+          </a>
+
+          <a href="https://www.youtube.com/c/PROTOINDUSTRIJA" target="_blank">
+            <img
+              src="./img/proto-industrija-logo.png"
+              alt="Proto industrija logo png"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="right"></div>
+    </section>
+
+    <section class="contact">
+      <div class="left">
+        <div class="graphics">
+          <h2>
+            There’s a space <br />
+            on my CV for <br />
+            MailerLite
+          </h2>
+          <div class="imgs">
+            <img src="./img/contact-1.jpg" alt="Contacts" />
+            <img src="./img/contact-2.jpg" alt="Contacts" />
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <form
+          name="contact-main-page"
+          method="POST"
+          action="/thanks/"
+          data-netlify="true"
+        >
+          <input
+            name="Name"
+            type="text"
+            spellcheck="false"
+            placeholder="Your name"
+          />
+          <input
+            name="Email"
+            type="email"
+            spellcheck="false"
+            placeholder="Your email address"
+          />
+          <textarea
+            name="Message"
+            id="message"
+            cols="30"
+            rows="8"
+            spellcheck="false"
+            placeholder="Enter your message"
+          ></textarea>
+
+          <button>SEND</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="text">
+        <p>tomas@labasauskas.com</p>
+        <p>2022 Ⓒ LABAŠAUSKAS</p>
+      </div>
+
+      <div class="links">
+        <a
+          href="https://open.spotify.com/user/uoxhig72dubwiw5fn4ycnh10u?si=2a30752202704f2e"
+          target="_blank"
+          ><i class="fa-brands fa-spotify"></i
+        ></a>
+        <a href="https://github.com/tomas-labasauskas" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/tomas-labasauskas/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="./js/mob-nav.js"></script>
   </body>
 </html>

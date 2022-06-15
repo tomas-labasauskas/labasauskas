@@ -1,8 +1,16 @@
-$background: white;
-$color: #12312e;
-$a: #12312e73;
-$border: #12312e17;
+$margin1: 15rem;
+$margin2: 8rem;
+$margin3: 4rem;
+$margin4: 3rem;
+$margin5: 2rem;
 
 @import "global";
 @import "header";
-@import "home";
+@import "hero";
+@import "footer";
+@import "contact";
+@import "portfolio";
+@import "work";
+@import "tech-stack";
+@import "life";
+@import "thanks";

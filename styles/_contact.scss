@@ -1,0 +1,195 @@
+.contact {
+  display: flex;
+  background: white;
+  color: black;
+  .left {
+    .graphics {
+      margin-left: $margin1;
+      margin-top: 9rem;
+      h2 {
+        font-size: 8rem;
+        font-weight: 700;
+        margin-bottom: 5rem;
+      }
+      .imgs {
+        margin-bottom: 8rem;
+        img {
+          margin-right: 4rem;
+        }
+      }
+    }
+  }
+  .right {
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-right: $margin1;
+      margin-top: 9rem;
+      margin-bottom: 8rem;
+      input,
+      textarea {
+        border: none;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 2rem;
+        background: #ececec;
+        margin-bottom: 2rem;
+        padding: 2.4rem 3.6rem;
+        resize: none;
+        transition: all 0.2s ease-in-out;
+        &:focus {
+          background: #d6d6d6;
+        }
+      }
+      button {
+        font-family: "Space Grotesk", sans-serif;
+        letter-spacing: 1px;
+        border: none;
+        background: black;
+        color: white;
+        font-weight: 500;
+        font-size: 2rem;
+        align-self: flex-start;
+        padding: 2.6rem 5.5rem;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          padding: 2.6rem 6.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1710px) {
+  .contact {
+    .left {
+      .graphics {
+        h2 {
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .contact {
+    .left {
+      .graphics {
+        margin-left: $margin2;
+      }
+    }
+    .right {
+      form {
+        margin-right: $margin2;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    .left {
+      .graphics {
+        margin-left: $margin3;
+        h2 {
+          font-size: 4.5rem;
+        }
+      }
+    }
+    .right {
+      form {
+        margin-right: $margin3;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .contact {
+    flex-direction: column;
+    .left {
+      width: 100%;
+      .graphics {
+        .imgs {
+          margin-bottom: 0rem;
+        }
+      }
+    }
+    .right {
+      width: 100%;
+      form {
+        margin-left: $margin3;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .contact {
+    .left {
+      .graphics {
+        margin-top: 5rem;
+        .imgs {
+          img {
+            max-height: 12rem;
+            margin-right: 1.5rem;
+          }
+        }
+      }
+    }
+    .right {
+      form {
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact {
+    .left {
+      .graphics {
+        margin-right: $margin4;
+        margin-left: $margin4;
+        h2 {
+          font-size: 3.5rem;
+        }
+      }
+    }
+    .right {
+      form {
+        margin-right: $margin4;
+        margin-left: $margin4;
+        input,
+        textarea {
+          font-size: 1.8rem;
+          padding: 2rem 3rem;
+        }
+        button {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contact {
+    .left {
+      .graphics {
+        margin-right: $margin5;
+        margin-left: $margin5;
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+    .right {
+      form {
+        margin-right: $margin5;
+        margin-left: $margin5;
+      }
+    }
+  }
+}

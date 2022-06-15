@@ -6,72 +6,59 @@
 
 html {
   font-size: 62.5%;
-  background: $background;
-  color: $color;
-  font-family: "Poppins", sans-serif;
-  transition: all 0.2s ease-in-out;
+  background: #080808;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
 }
 
 /*
 Regular 400
 Medium 500
 Semi-bold 600
+Bold 700
 */
-
-a {
-  font-size: 1.6rem;
-  color: $a;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    color: $color;
-  }
-}
-.active {
-  color: $color;
-}
-
-h1 {
-  font-size: 2.4rem;
-  font-weight: 600;
-}
-
-p {
-  font-size: 1.6rem;
-  line-height: 3rem;
-  color: $color;
-}
-
-img {
-  border-radius: 30px;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 470px) {
-  html {
-    font-size: 55%;
-  }
-}
 
 // CUSTOM SCROLLBAR
 
-/* width */
-::-webkit-scrollbar {
-  width: 6px;
+// /* width */
+// ::-webkit-scrollbar {
+//   width: 6px;
+// }
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: rgba(0, 0, 0, 0);
+// }
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: rgba(0, 0, 0, 0.178);
+//   //border-radius: 90px;
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: rgba(0, 0, 0, 0.5);
+// }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
+.right {
+  width: 44%;
 }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.178);
-  //border-radius: 90px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.5);
+.left {
+  width: 56%;
 }
