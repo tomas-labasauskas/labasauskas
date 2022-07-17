@@ -3,7 +3,8 @@ header {
   top: 0;
   width: 100%;
   height: 10rem;
-  background: #080808ec;
+  backdrop-filter: blur(5px);
+  background: #080808e1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +28,7 @@ header {
           margin-left: 3.5rem;
           a {
             font-size: 1.6rem;
-            border-bottom: 1px solid #080808ec;
+            border-bottom: 1px transparent;
             transition: all 0.2s ease-in-out;
             &:hover {
               width: 100%;
@@ -54,9 +55,10 @@ header {
 .mob-nav {
   display: none;
   position: fixed;
-  top: 7.9rem;
+  top: 8rem;
   width: 100%;
-  background: #080808ec;
+  backdrop-filter: blur(5px);
+  background: #080808e1;
   z-index: 10;
   ul {
     text-align: end;
@@ -68,7 +70,7 @@ header {
       margin-bottom: 2rem;
       a {
         font-size: 2rem;
-        border-bottom: 1px solid #080808ec;
+        border-bottom: 1px transparent;
         transition: all 0.2s ease-in-out;
         &:hover {
           width: 100%;

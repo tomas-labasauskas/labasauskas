@@ -47,7 +47,9 @@ header {
   top: 0;
   width: 100%;
   height: 10rem;
-  background: #080808ec;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background: #080808e1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,7 +100,7 @@ header .pc-wrap nav ul li {
 
 header .pc-wrap nav ul li a {
   font-size: 1.6rem;
-  border-bottom: 1px solid #080808ec;
+  border-bottom: 1px transparent;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -123,9 +125,11 @@ header .pc-wrap .mob-nav-btn {
 .mob-nav {
   display: none;
   position: fixed;
-  top: 7.9rem;
+  top: 8rem;
   width: 100%;
-  background: #080808ec;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background: #080808e1;
   z-index: 10;
 }
 
@@ -143,7 +147,7 @@ header .pc-wrap .mob-nav-btn {
 
 .mob-nav ul li a {
   font-size: 2rem;
-  border-bottom: 1px solid #080808ec;
+  border-bottom: 1px transparent;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
